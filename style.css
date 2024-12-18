@@ -32,3 +32,81 @@
     font-size: 20px;
     font-weight: bold;
 }
+.navbar-brand{
+    mix-blend-mode: multiply;
+}
+.container-fluid{
+    background-color: #fbb684;
+    padding:0px;
+}
+.btn{
+    background-color: #fbb684;
+    color:#ffffff;
+    font-weight:bolder;
+    height:50px;
+    font-size:130%;
+    border-style:none;
+    margin-top:15px;
+}
+.btn:before{
+    transition:0.5s all ease;
+    position:absolute;
+    top:0;
+    left:50%;
+    right:50%;
+    bottom:0;
+    opacity:0;
+    content:"";
+    background-color:#fbb684;
+    z-index:-1;
+}
+.btn:hover, .btn:focus{
+    background-color:#198754;
+}
+.btn:hover:before, .btn:focus:before{
+    transition:0.5s all ease;
+    left:0;
+    right:0;
+    opacity:1;
+}
+.btn:active{
+    transform:scale(0,9);
+}
+.card{
+    border-style:none;
+    transition: 0.5s ease-in-out;
+}
+.card:hover{
+    transform: translateY(20px);
+}
+.card1{
+    border:2px solid #fbb684;
+    /*transition-duration:0.5s;*/
+}
+#reddish:hover{
+    background-color:#198754;
+    color:#ffffff;
+    transition:0.5s linear;
+    font-size:25px;
+}
+.navbar-light .navbar-nav .nav-link{
+    position:relative;
+    color:#ffffff;
+    font-weight:bolder;
+    font-size:20px;
+}
+.navbar-light .navbar-nav .nav-link::after{
+    content:"";
+    position:absolute;
+    background:black;
+    left:0;
+    bottom:0;
+    width:95%;
+    height:4px;
+    opacity:0;
+    transition:0.3s ease-in;
+}
+.navbar-light .navbar-nav .nav-link:hover::after{
+    opacity:1;
+    transform:translateY(8xp);
+}
